@@ -6,7 +6,6 @@ input,
 textarea {
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #0d0606;
   border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
@@ -17,8 +16,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #007bff;
-  color: white;
   border-radius: 4px;
 }
 
@@ -34,13 +31,23 @@ button {
   top: 10px;
   right: 10px;
   font-size: 24px;
-  background-color: #28a745;
+  background-color: #808080;
   color: white;
   border: none;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   cursor: pointer;
+  box-shadow: none;
+  transition: none;
+}
+
+.note-list button:hover,
+.note-list button:focus,
+.note-list button:active {
+  background-color: #808080;
+  color: white;
+  box-shadow: none;
 }
 
 .center-title {
@@ -64,6 +71,7 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
 .note {
   position: relative;
   padding: 10px;

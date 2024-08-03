@@ -35,7 +35,7 @@ const NoteList: React.FC = () => {
         sx={{
           position: "fixed",
           top: {
-            xs: "60px",
+            xs: "100px",
             md: "80px",
           },
           right: {
@@ -50,19 +50,28 @@ const NoteList: React.FC = () => {
           color: "white",
           border: "none",
           width: {
-            xs: "120px",
+            xs: "100px",
             md: "150px",
           },
           height: {
             xs: "40px",
-            md: "50px",
+            md: "40px",
           },
           cursor: "pointer",
-          borderRadius: "8px",
+
           zIndex: 1300,
+          "&:hover": {
+            backgroundColor: "#808080",
+          },
+          "&:focus": {
+            backgroundColor: "#808080",
+          },
+          "&:active": {
+            backgroundColor: "#808080",
+          },
         }}
       >
-        + Add Note
+        + Add Notes
       </Button>
       {/* section for pinned notes */}
       <Box sx={{ mb: 4 }}>
